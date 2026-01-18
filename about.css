@@ -4,28 +4,32 @@
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "sora, sans-serif";
+    font-family: font1;
     color: rgb(99, 59, 59);
   
 
-
-
+}
+@font-face {
+    font-family: font1;
+    src: url(./front.html/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
 }
  header{
     display: flex;
+    position: fixed;
+    z-index: 2;padding-top: 10px;
     background-color:rgb(255,249,242);  
     flex-direction: column;
     width: 100%;
-    height: 10vh; 
+    height: 12vh; 
     flex-wrap: nowrap; 
  }  
  main{
+
     background-color:rgb(255,249,242);
 
 } 
 nav{
     display:flex;
-    position: fixed;
     text-decoration: none;
     background-color:rgb(255,249,242);  
     flex-direction: column;
@@ -33,9 +37,8 @@ nav{
     flex-direction:row;  
     justify-content:space-around; 
     align-items: center; 
-    height: 10vh;
+    height: 8vh;
     width: 100%;  
-    z-index: 3;
 } 
 
  .icon{
@@ -64,6 +67,7 @@ nav{
     height:5vh;  
     width: 40vw; 
     list-style: none;
+   
 }
 a{
     text-decoration: none;
@@ -96,7 +100,6 @@ a{
 .burgerbar{
     display: flex;
     justify-content: flex-end;
-    position: fixed;
     z-index: 4;
     margin-bottom: 50px;
     width: 95vw;
@@ -125,16 +128,16 @@ main{
     justify-content: flex-start;
     gap:15%;
     width: 95vw;
-    padding-top: 60px;
-    height: 120vh;
+    padding-top: 10%; 
+    height: 140vh;
 }
 .content1{
-    width: 40vw;
+    width: 50vw;
 }
 .content2{
     display: flex;
     flex-direction: row;
-    padding-left: 20%;
+    padding-left: 20%; 
     gap:20px;
     animation: moveup 95s infinite ease-in-out;
 }
@@ -155,7 +158,7 @@ main{
 }
 h1{
     font-size: 60px;
-    font-family: sans-serif;
+    font-family: font1;
 }
 .men{
     position: relative;
@@ -164,11 +167,12 @@ h1{
     height: 60px;
     
 }
+
+
 .conteiner{
     display: flex;
     flex-direction:column ;
     padding: 50px;
-    font-family: "Arial, Helvetica, sans-serif";
     font-size: 20px;
     gap:30%;
     width: 40vw;
@@ -187,25 +191,24 @@ h1{
     }
 }
 .sweet{
+    object-fit: cover;
     width: 35vw;
     height: 50vh;
+  
 }
 .content3{
+    display: flex;
     width: 20px;
     height: 30px;
 }
 .kitchen{
-    width: 40vw;
+    object-fit: cover;
+    width: 30vw;
     height: 98vh;
-    z-index: 1;
+ 
 
 }
-.kitchen1{
-    display: none;
-    width: 30vw;
-    height: 40vh;
-    z-index: 2;
-}
+
 
 footer{
   background-color: rgb(255,241,204);
@@ -214,7 +217,6 @@ footer{
 .information{
     display: flex;
     flex-direction: row;
-    font-family:"futura-lt-w01-book, sans-serif";
     justify-content: space-between;
     margin-left: 10%;
     width: 80%;
@@ -265,7 +267,6 @@ h3{
 .href{
     display: flex;
     flex-direction: column;
-    font-family:"futura-lt-w01-book, sans-serif";
     justify-content: flex-end;
     font-size: 18px;
     margin-bottom: 15px;
@@ -288,19 +289,129 @@ h3{
 
 
 
+ @media screen and (min-width: 801px) and (max-width: 1400px) { 
+    .main{
+        height: 20vh;
 
-
-
-
-
-
-@media screen and (max-width:768px){
-     *{
-        animation:none !important
-    }
      
-    header{
-        height: 15vh;
+        
+    }  
+    nav{
+        height: 10vh;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap:5%;
+    }
+   
+.burger{
+    display: none;
+    
+}
+.icon{
+         position: relative;
+        right: 60px;
+        
+    } 
+
+    .tex{
+        display: block;
+        margin-left: 20px;
+        width: 20vw;
+       
+
+    }
+.ul{
+    display: flex;
+    flex-direction: row;
+    min-width: 40vw;
+
+}
+ .box{
+    display: block;
+    align-items: flex-end;
+    width: 10vw;
+}
+
+.login{
+    display: flex;
+    margin: 10px;
+    align-items: flex-end; 
+    justify-content:center;
+    height: 5vh;  
+    width: 40vw;
+    font-size: 16px; 
+    
+}
+.login1{
+    display: block;
+
+}
+ .foto{
+    display: block;
+
+    
+    
+} 
+.content{
+    min-height: 155vh;
+}
+ .kitchen{
+   height: 120vh;
+   width: 35vw;
+ } 
+
+.information{
+    flex-direction:row;
+    justify-content: center;
+    width: 80vw;
+    height: 70vh !important; 
+    font-size: 20px;
+}
+.Log{
+    width: 60vw;
+    margin-bottom: 30px; 
+}
+h6{
+    width: 90vw;
+} 
+ .information1{
+    width: 80vw;
+    height: 5vh; 
+ 
+} 
+.info2{
+    margin-bottom: 20px;
+} 
+    
+.information2{
+    justify-content: flex-end;
+    height: 60vh;
+    width: 40vw;
+ } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+
+    *{
+        margin: 0;
+        padding: 0;
+       
+    }
+
+header{
+        height: 10vh;
         
 
     }
@@ -310,13 +421,261 @@ h3{
         
     }  
     nav{
-        width: 100%;  
         flex-wrap: nowrap;
         justify-content: flex-start;
-        gap:50px;
+        gap:50%;
+    }
+
+
+ .burger{
+        display: block;
+        position: relative;
+        bottom: 50px;
+        max-height: 8vh;
+       
+        
+    }
+     .ul{
+        display: none;
+        flex-direction: column;
+        }
+    .tex{
+        display: none;
+        }
+    .login1{
+        display: none;
+        }
+    .foto{
+        display: none;
+        }
+    .icon{
+     width: 50px;
+     height: 40px; 
+     margin-bottom:15px; 
+     
+      }
+.cart{
+    font-size: 20px;
+    min-width: 30vw;
+    
+}
+
+.content{
+        margin: 0;
+        flex-direction: row;
+        max-height: 150vh;
+        overflow: hidden;
+    
+}
+ 
+  .men{
+    position: relative;
+    bottom: 25%;
+  } 
+
+.content2{
+        width: 45vw;
+        height: 15vh;
+        margin-top: 15%; 
+      }
+h1{
+        padding-top: 20px;
+        font-size: 30px;
+      }
+.conteiner{
+        height: 30vh;
+        width: 45vw;
+        }
+.sweet{
+        width: 45vw;
+        height: 50vh;
+        z-index: 1;
+
+      }
+.content{
+    min-height: 120vh;
+}
+.content3{
+    height: 30vw;
+    /* align-content:center; */
+    margin: 0;
+}
+.kitchen{
+    height: 107vh;
+  
+}
+
+
+
+
+
+.information{
+    flex-direction:row;
+    width: 80vw;
+    height: 60vh; 
+    font-size: 20px;
+}
+.information1{
+    width: 40vw; 
+    height: 10vh; 
+    padding-top: 30px;
+} 
+
+h3{
+    width: 70vw;
+    height: 17vh;
+
+} 
+.Log{
+    width: 90vw;
+
+} 
+.information2{
+    justify-content: flex-end;
+    height: 50vh;
+    width: 70vw;
+
+    
+}
+
+}
+
+
+
+@media  screen and (min-width: 501px) and (max-width: 650px){
+    
+    .burger{
+        position: relative;
+        bottom: 50px;
+       
+    } 
+
+
+    
+    .content{
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-between; 
+        width: 90vw;
+        min-height:190vh;
+        
+      }
+       
+       
+      .content1{
+        width: 80vw;
+        height: 15vh;
+      }
+      .men{
+        position: relative;
+        top:10%;
+        right: 20px;
+       
+      }
+      .content2{
+        width: 60vw;
+        align-items: flex-start;
+        padding-left: 40px;
+      }
+     
+      .content3{
+        justify-content: center; 
+        align-items: flex-end;
+        width: 90%;
+        height: 110vh;
+        margin-left: 6%; 
+    }
+    .kitchen{
+    height: 70vh;
+    width: 75vw;
+    }
+
+
+      h1{
+        font-size: 30px;
+        min-width: 70vw;
+      }
+    .conteiner{
+        height: 30vh;
+        width: 90vw;
+    }
+    p{
+        width: 80vw;
+    }
+     .sweet{
+        width: 70vw;
+        min-height: 50vh !important;
+      }
+
+.information{
+    flex-direction: column;
+    width: 80vw;
+    height: 95vh; 
+    font-size: 20px;
+}
+.information1{
+    width: 70vw;
+    height: 5vh; 
+    padding-top: 30px;
+} 
+
+h3{
+    width: 70vw;
+    height: 17vh;
+
+} 
+.Log{
+    width: 90vw;
+    height: 60vh;
+
+} 
+.information2{
+    height: 30vh; 
+    
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+     *{
+        animation:none !important
+    }
+     
+    header{
+        height: 10vh;
+        
+
+    }
+    .main{
+        height: 20vh;
+     
+        
+    }  
+    nav{
+        width: 60%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap:30%;
+       
     }
     .burger{
         display: block;
+        position: relative;
+        bottom: 60px;
+        height:15vh;
+        
         
     }
      .ul{
@@ -337,195 +696,103 @@ h3{
      height: 40px; 
      margin-bottom:15px;   
       }
+.cart{
+    font-size: 20px;
+    min-width: 30vw;
+    
+}
 
     .content{
         padding: 0;
         flex-direction: column;
-        width: 100vw;
-        height: 115vh;
+        justify-content: space-between; 
+        padding-top: 10%;
+        width: 90vw;
+        min-height:200vh;
+        
       }
-     
+       
+
       .content1{
-        width: 60vw;
-        height: 25vh;
+        width: 80vw;
+        height: 15vh;
       }
       .men{
         position: relative;
-        top:10%
+        top:10%;
+        right: 20px;
+       
       }
       .content2{
-        width: 95vw;
-      }
-      h1{
-        font-size: 40px;
-      }
-    .conteiner{
-        height: 50vh;
-        width: 90vw;
-    }
-     .sweet{
-        width: 70vw;
-        height: 60vh;
-      }
-
-
-.information{
-    flex-direction: column;
-    width: 80vw;
-    height: 110vh; 
-    font-size: 20px;
-}
-.information1{
-    width: 80vw;
-    height: 70vh; 
-    padding-top: 30px;
-} 
-
-h3{
-    width: 70vw;
-    height: 17vh;
-
-} 
-.Log{
-    width: 90vw;
-
-} 
-.information2{
-    width: 100%;
-    height: 40vh; 
-    
-}
-
-
-.content3{
-    display: none;
-}
-
-
-}
-
-
-
-
-
-
-
-
-@media screen and (min-width:770px)and (max-width:1450px){
-
-    *{
-        margin: 0;
-        padding: 0;
-       
-    }
-
-
-
-nav{
-  
-    width:100vw;
-    border: 2px solid gray;
-}
-
-.icon{
-        position: relative;
-        left: 10px;       
-        
-    }
-.box{
-    align-items: flex-end;
-    width: 40vw;
-}
-.ul{
-    width: 30vw;
-    margin: 0;
-}
-.login{
-    width: 30vw;
-    font-size: 16px;
-   
-}
-
-.content{
-        margin: 0;
-        padding: 0;
         flex-direction: row;
-        height: 110vh;
         width: 100%;
-        overflow: hidden;
+        align-content: center;
+        padding-left: 5%; 
+      }
+      .men{
+        width: 60px;
+        height: 40px;
+      }
     
-}
- 
-.men{
-    position: relative;
-} 
-     
-
-.content2{
-        width: 45vw;
-        height: 30vh;
-      }
-h1{
-        font-size: 40px;
-      }
-.conteiner{
-        height: 50vh;
-        width: 45vw;
-        }
-.sweet{
-        width: 45vw;
-        height: 50vh;
-        z-index: 1;
-      }
 .content3{
-    height: 30vw;
-    height: 120vh;
-    align-content:center;
+    justify-content: center; 
+    align-items: flex-end;
+    width: 90%;
+    height: 110vh;
+    margin-left: 12%;
 }
 .kitchen{
-    position: relative;
-    right: 40px;
-    width: 45vw;
-    height: 35vh;
-}
-.kitchen1{
-    display: block;
-    position: relative;
-    right: 120px;
-    height: 30vh;
-    bottom: 7%;
-
+    height: 70vh;
+    width: 100%;
 }
 
+      h1{
+        font-size: 30px;
+        min-width: 70vw; 
+        padding-left: 10%;
+      }
+    .conteiner{
+        height: 30vh;
+        width: 90vw;
+    }
+    p{
+        width: 80vw;
+    }
+     .sweet{
+        width: 80vw;
+        min-height: 40vh;
+      }
 
 
 .information{
     flex-direction: column;
-    width: 80vw;
-    height: 90vh; 
+    width: 70vw;
+    min-height: 105vh;
     font-size: 20px;
 }
 .information1{
-    width: 70vw;
-    height: 50vh; 
-    padding-top: 30px;
+    width: 80vw;
+    min-height: 40vh;
+    padding-top: 30px; 
 } 
 
 h3{
-    width: 70vw;
-    height: 17vh;
+    min-width: 50vw;
+    min-height: 17vh;
+    font-size: 35px;
 
 } 
-.Log{
-    width: 90vw;
 
-} 
+
+
+
 .information2{
-    width: 80vw;
-    height: 40vh; 
+    width: 100%;
+   min-height: 30vh;
     
 }
 
-
-
 }
+
+
+

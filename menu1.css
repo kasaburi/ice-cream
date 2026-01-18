@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(99, 59, 59);
+    font-family: font;
+    background-color:rgb(255, 241, 204) ;
+  
+
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 90vh;
+    font-size: 30px;
+}
+li{
+    padding-bottom: 10%;
+}
+
