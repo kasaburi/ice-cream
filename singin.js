@@ -1,4 +1,81 @@
 
+const burgerBtn = document.getElementById("burgerBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (burgerBtn && mobileMenu) {
+
+    burgerBtn.addEventListener("click", () => {
+
+        mobileMenu.classList.toggle("active");
+
+    });
+
+}
+
+
+// =========================================
+// MOBILE LOGIN
+// =========================================
+
+const mobileLogin = document.getElementById("mobileLogin");
+
+if (mobileLogin) {
+
+    mobileLogin.addEventListener("click", () => {
+
+        authContent.innerHTML =
+            '<iframe src="singin.html" style="width:100%; height:400px; border:none;"></iframe>';
+
+        popup.style.display = "flex";
+
+        // მენიუს დახურვა
+        mobileMenu.classList.remove("active");
+
+    });
+
+}
+
+
+// =========================================
+// MOBILE REGISTER
+// =========================================
+
+const mobileRegister = document.getElementById("mobileRegister");
+
+if (mobileRegister) {
+
+    mobileRegister.addEventListener("click", () => {
+
+        authContent.innerHTML =
+            '<iframe src="registre.html" style="width:100%; height:400px; border:none;"></iframe>';
+
+        popup.style.display = "flex";
+
+        // მენიუს დახურვა
+        mobileMenu.classList.remove("active");
+
+    });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("loginForm");

@@ -7,16 +7,110 @@
         <link rel="stylesheet" href="./singin.css">
     </head>
     <body>
-        <form id="loginForm">
-            <h2>ავტორიზაცია</h2>
-            <label for="email">ელ-ფოსტა</label>
-            <input type="email" id="email" name="email" required placeholder="email">
-            <label for="password">პაროლი</label>
-            <input type="password" id="password" name="password" required minlength="6" placeholder="password">
-            <button type="submit" id="submit">შესვლა</button>
-            <div id="loginError" style="color:red; display:none;"></div>
-            <div id="loginSuccess" style="color:green; display:none;"></div>
-        </form>
+        <header class="header">
+            <nav class="navbar">
+                <div class="brand">
+                    <img src="./ice.html/iceee.png" alt="Singh Ice Cream" class="icon">
+                    <p class="tex">Singh Ice Cream</p>
+                </div>
+                <div class="li">
+                    <ul class="ul">
+                        <li><a href="./index.html">home</li>
+                        <li> <a href="./about.html">About</a> </li>
+                        <li><a href="./our-flavors.html">Our Flavors</a>  </li>
+                        <li> <a href="./shop.html">Shop</a> </li>
+                    </ul>
+                </div>
+                <div class="login1">
+                    <div class="login">
+                        <button type="button" id="btnLogin"><a href="./singin.html">Authorization</a></button>
+                        <button type="button" id="btnRegister"> <a href="./registre.html">Registration </a></button>
+                        <a href="#" class="cart">  Cart (0)</a>
+                    </div>
+                </div>
+                <button type="button" class="burgerbar" id="burgerBtn" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg"    class="burger"  viewBox="0 0 448 512">
+                        <path fill="#743806"  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z">
+                        </path>
+                    </svg>
+                </button>
+            </nav>
+            <div class="mobileMenu" id="mobileMenu">
+                <ul class="mobileNav">
+                    <li><a href="./index.html">home</li>
+                    <li><a href="./about.html">About</a></li>
+                    <li>  <a href="./our-flavors.html">Our Flavors</a> </li>
+                    <li> <a href="./shop.html">Shop</a></li>
+                </ul>
+                <div class="mobileAuth">
+                    <button type="button" id="mobileLogin"><a href="./singin.html">Authorization</a></button>
+                    <button type="button" id="mobileRegister">   <a href="./registre.html">Registration </a> </button>
+                    <a href="#" class="mobileCart"> Cart (0)</a>
+                </div>
+            </div>
+        </header>
+        <div class="conteiner">
+            <form id="loginForm">
+                <h2>ავტორიზაცია</h2>
+                <label for="email">ელ-ფოსტა</label>
+                <input type="email" id="email" name="email" required placeholder="email">
+                <label for="password">პაროლი</label>
+                <input type="password" id="password" name="password" required minlength="6" placeholder="password">
+                <button type="submit" id="submit">შესვლა</button>
+                <a href="./registre.html">გაიარეთ რეგისტრაცია</a>
+                <div id="loginError" style="color:red; display:none;"></div>
+                <div id="loginSuccess" style="color:green; display:none;"></div>
+            </form>
+        </div>
+        <footer>
+            <div class="information">
+                <div class="information1">
+                    <div class="Log">
+                        <img src="./ice.html/iceee.png" alt="icon" class="icon1">
+                        <h6>I. Singh Ice Cream</h6>
+                    </div>
+                    <div class="log1">
+                        <div class="info">
+                            <a href="tel:123-456-7890">123-456-7890</a>
+                            <a href="mailinfo@mysite.com">info@mysite.com</a>    
+                        </div>
+                        <div class="info1">
+                            <p>500 Terry Francine St. San </p>
+                            <p>Francisco, CA 94158</p>
+                        </div>
+                        <ul class="info2">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="./ice.html/facebook.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="./ice.html/instagram.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="./ice.html/twiter.png" alt="twiter">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="information2">
+                    <div class="href">
+                        <a href="./book.html">Book a table</a>
+                        <a href="./Accessibility Statement.html">Accessibility Statement</a>
+                        <a href="./cards.html">Shipping Policy</a>
+                        <a href="./cards.html">Terms & Conditions</a>
+                        <a href="./Accessibility Statement.html">Refund Policy</a>
+                    </div>
+                    <div class="last1">
+                        <p>© 2035 by I. Singh Ice Cream. Powered and secured by <span style=text-decoration:underline>wix</span>  </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="singin.js"></script>
     </body>
 </html> 

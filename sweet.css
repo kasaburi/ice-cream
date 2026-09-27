@@ -15,283 +15,374 @@
     font-family: font;
     src: url(./front.html/EduNSWACTHandPre-VariableFont_wght.ttf);
 }
- header{
-    display: flex;
-    position: fixed;
-    align-content: center;
-    padding-top: 10px;
-    background-color:rgb(255,249,242); 
-    flex-direction: column;
+
+
+main {
+    background-color: rgb(255, 249, 242);
+}
+
+.header1 {
+    display: block;
+}
+
+
+
+
+
+
+
+.login a{
+    color: white;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
     width: 100%;
-    height: 20vh; 
-    z-index: 4;
-    flex-wrap: nowrap; 
- }  
- .header1{
-    display: block;
- } 
-main{
-    background-color:rgb(255,249,242);
-
-}
-
-nav{
-    display:flex;
-    text-decoration: none;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family:font;
-    flex-direction:row;  
-    background-color:rgb(255,249,242);
-    align-items: center;  
-    height: 10vh;
-    width: 100%;  
-
-} 
-
- .icon{
-    display: flex;
     position: relative;
-    width: 45px;
-    height: 40px; 
-    left: 3%;
-    flex-shrink: 0;
-    
-
-    
- }
-
-
-
-.tex{
-    display: block;
-    position: relative; 
-    top: 15px;
-    height: 5vh;
-    font-size: 16px;
-    color: rgb(99, 59, 59);
-} 
-.li{
-    display: block;
+    z-index: 1000;
 }
 
-.ul{
-    display: flex; 
-    position: relative; 
-    font-size: 20px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;   
-    height:5vh;  
-    width: 40vw; 
-    list-style: none;
-}
+.navbar {
+    width: 100%;
+    min-height: 80px;
 
-a{
-    text-decoration: none;
-    color: rgb(99, 59, 59);
-}
-.login{
-    display: flex;
-    flex-direction:row;
-    gap:10%; 
-    font-size: 20px;
-    width: 20vw; 
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#authPopup{
-  display:none; 
-  position:fixed; 
-  inset:0; 
-  background:rgba(0,0,0,0.6); 
-  justify-content:center; 
-  align-items:center; 
-  z-index:2;
-  border: 2px solid rgb(51, 0, 255);
-}
-
-
-
-
-
-.popuoauth{
-  background:#080808fd; 
-  padding:20px; 
-  border-radius:12px; 
-  width:500px; 
-  max-width:90vw; 
-  max-height:90vh;
-   overflow:auto;
-
-}
-
-
-#authContent{
-  width:100%;
-   height:400px
-}
-
-
-
-.close{
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10%;
-  height: 5vh;
-  padding-top: 20px;
-}
-
-#btnClose{
-  background-color:#206073 ;
-  width: 10vw;
-  height: 30px;
-  color: aliceblue;
-  border-radius: 7px;
-  border: none;
-
-}
-
-#btnLogin{
-   border-radius: 7px;
-    color: #fbf4f4;
-    border: none;
-    background-color: rgb(99, 59, 59);;
-    font-size: 12px;
-    width: 100px;
-    height: 30px;
-}
-
-   
-
-#btnLogin:hover{
-box-shadow: 0 0 15px 5px rgba(99, 59, 59, 0.478);;
-background-color: rgba(99, 59, 59, 0.619); ;
-}
-
-
-
-
-
-.cart{
-    font-size: 13px;
-    width: 7vw;
-}
-
-#btnRegister{
-   border-radius: 7px;
-    color: #fbf4f4;
-    border: none;
-    background-color:  rgb(99, 59, 59);;
-    width: 100px;
-    height: 30px;
-    font-size: 12px;
-
-}
-
-#btnRegister:hover{
-  box-shadow: 0 0 15px 5px  rgba(99, 59, 59, 0.508);;
-background-color:  rgba(99, 59, 59, 0.519);;
-}
-
-
-
-
-    .popup-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    .popup-content {
-      background: #fff;
-      width: 90%;
-      max-width: 600px;
-      height: 500px;
-      border-radius: 10px;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-    .popup-header {
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-      border-bottom: 1px solid #ddd;
-    }
-    .popup-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-    .popup-buttons button {
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-    .popup-close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      border: none;
-      background: red;
-      color: white;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .popup-frame {
-      flex: 1;
-      border: none;
-      width: 100%;
-    }
-
-
-
-
-
-
-
-
-.login{
     display: flex;
     align-items: center;
 
-  
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.tex {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #743806;
+}
+
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+.li {
+    margin-left: 60px;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: #743806;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.ul li a:hover {
+    color: #b85c20;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER
+========================================= */
+
+.login1 {
+    margin-left: auto;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login button {
+    border: none;
+    padding: 10px 16px;
+
+    background: #743806;
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background: #9b4d0b;
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+.cart {
+    text-decoration: none;
+    color: #743806;
+
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.cart:hover {
+    color: #b85c20;
+}
+
+
+/* =========================================
+   BURGER
+========================================= */
+
+.burgerbar {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    padding: 5px;
+    cursor: pointer;
+}
+
+.burger {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobileMenu {
+    display: none;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background: white;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mobile navigation */
+
+.mobileNav {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.mobileNav li a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #743806;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    padding: 10px 0;
+}
+
+
+/* Mobile auth */
+
+.mobileAuth {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+}
+
+.mobileAuth button {
+    width: 100%;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background: #743806;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.mobileAuth button:hover {
+    background: #9b4d0b;
+}
+
+.mobileCart {
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #743806;
+
+    padding: 10px;
 }
 
 
 
 
 
-.login1{
-    display: block;
-    gap: 5px;
 
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  .foto{
     display: block;
@@ -303,52 +394,38 @@ background-color:  rgba(99, 59, 59, 0.519);;
     border-radius: 50%;
     
 }
-.burgerbar{
-    display: flex;
-    justify-content: flex-end; 
-    z-index: 2; 
-    margin-bottom: 50px; 
-    width: 95vw;
-    height: 10vh;
-
-}
-.burger{
-    display: none;  
-    width: 10vw;
-    height: 10vh;
-       
-}
 
 h1{
-    margin-left: 30px; 
     text-align: center;
-    font-size: 115px;
-    height: 40vh;
+    font-size: 64px;
+    max-height: 35vh;
+    height: auto;
     width: 95vw;
     color: rgb(99, 59, 59);
-    padding-top: 5%; 
+    padding-top: 40px; 
 }
 .content{
     display: flex;
     width: 95vw;
-    height: 100vh; 
+    height: 70vh; 
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap:10%; 
 }   
 
 .content1{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-left: 40px; 
+    justify-content: center;
+    align-items: center;
+    gap:46px;
     width: 40vw;
-    height: 100vh;
+    height: 70vh;
     color: rgb(99, 59, 59);
     font-family: font;
-    font-size: 41px;
+    font-size: 32px;
+
 }
 
 
@@ -356,7 +433,7 @@ h1{
     display: flex;
     object-fit: cover;
     width: 40vw;
-    height: 100vh;
+    height: 70vh;
 } 
 
 .welcome{
@@ -383,10 +460,11 @@ h1{
     
 }
 h3{
-    position: relative;
-    bottom: 7%;
-    width: 30vw;
-    height: 55vh;
+  
+    font-size: 32px;
+    max-width: 30vw;
+
+
 }
 
 .getstarted{
@@ -394,7 +472,7 @@ h3{
     color:rgb(99, 59, 59);
     border: 1px solid rgb(99, 59, 59) ;
     border-radius: 50px;
-    width: 10vw;
+    width: 20vw;
     height: 8vh;    
 }    
 
@@ -1054,7 +1132,10 @@ h6{
 
 @media screen and (min-width: 800px) and (max-width: 1300px){
 
-
+nav{
+    gap:24px;
+  
+}
 .icon{
         position: relative;
         left: 10px;       
@@ -1064,6 +1145,7 @@ h6{
 .ul{
     align-items: center;
     max-width: 59vw;
+
 }
 .box{
     align-items: flex-end;
@@ -1073,6 +1155,7 @@ h6{
 .login{
     width: 30vw;
     font-size: 16px;
+
    
 }
     h1{
@@ -1328,6 +1411,11 @@ h6{
  }    
 
 
+
+ .tex{
+    font-size: 12px;
+ }
+
 }
 
 
@@ -1353,57 +1441,74 @@ h6{
      
         
     }  
-    nav{
-        width: 80%;  
-        justify-content: space-evenly;
-        align-items: center;
-        gap:10%;
-        min-height: 8vh;
 
+
+
+
+
+
+
+
+
+    .navbar {
+        padding: 10px 20px;
     }
-   header{
-    display: flex;
-    max-height: 10vh;
-   }
+
+
+    /* Desktop menu დამალვა */
+
+    .li {
+        display: none;
+    }
+
+    .login1 {
+        display: none;
+    }
+
+
+    /* Burger გამოჩნდეს */
+
+    .burgerbar {
+        display: block;
+
+        margin-left: auto;
+    }
+
+
+    /* Mobile menu */
+
+    .mobileMenu.active {
+        display: block;
+    }
+
+
+    /* Logo */
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tex {
+        font-size: 18px;
+    }
 
 
 
 
 
-
-
-.login1{
-   display:flex !important;
-
- 
+#mobileLogin,
+#mobileRegister{
+    width: 280px;
+    min-height: 48px;
 }
 
-#btnLogin{
-    min-width:80px;
-    min-height: 30px;
-}
 
-#btnRegister{
-     min-width:80px;
-    min-height: 30px;
-   
-}
-
-.login{
-    display: flex;
-    align-items: center;
-    min-width: 50vw;
-    min-height: 8vh;
-}
 
 
 
 .cart{
-    font-size: 16px;
-    width: 15vw;
-    min-height: 30px;
-    padding-top: 20px;
-
+    display: block;
 }
 
 
@@ -1411,36 +1516,23 @@ h6{
 
 
 
-    .burger{
-        display: block;
-        position: relative;
-       bottom: 55px; 
-        max-height: 7vh !important;
-        
-    }
-    .ul{
-        display: none;
-        flex-direction: column;
-        }
-    .tex{
-        display: none;
-        }
+
+
+
+
+
+
+
+
+
+
     .login1{
         display: none;
         }
     .foto{
         display: none;
         }
-    .icon{
-     width: 50px;
-     height: 40px; 
-     margin-bottom:15px;   
-   
-    }
 
-.cart{
-    padding-bottom: 20px;
-}
 
 
 main{
@@ -1753,6 +1845,27 @@ h6{
 
 
 
+#mobileLogin a,
+#mobileRegister a{
+    color: white;
+
+}
+
+#mobileLogin,
+#mobileRegister{
+    min-height: 48px;
+    width:240px;
+}
+
+
+.mobileNav  a{
+    gap:0;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 
 }
 
@@ -1768,79 +1881,95 @@ h6{
 
 @media screen and (max-width: 500px) {
    
- .ice{
-    min-width: 96vw;
-    padding: 0px;
-    margin: 0;
-    margin-right: 0px;
 
- }
 
-.content{
-    padding: 0;
-    margin: 0;
-}
-    header{
-        display: flex;
-        flex-direction: row;
-        max-height: 9vh;
-        width: 100%;
-        align-items: center;
-       padding-right: 12px;
-     
-   
-        
+
+
+
+
+
+
+
+
+
+    .navbar {
+        padding: 10px 20px;
     }
-    .main{
-        height: 20vh;
-    
-     
-        
-    } 
-    .cart{
-        display: none !important;
-    } 
-    nav{
-        min-width: 80vw; 
-        max-height: 7vh;
-       flex-direction: row;
-        gap:12%;
+
+
+    /* Desktop menu დამალვა */
+
+    .li {
+        display: none;
     }
-   
-    .burger{
+
+    .login1 {
+        display: none;
+    }
+
+
+    /* Burger გამოჩნდეს */
+
+    .burgerbar {
         display: block;
-        position: relative;
-        top: 20px; 
-        min-height: 5vh;  
-        
-    } 
-    .ul{
-        display: none;
-        flex-direction: column;
-        }
-    .tex{
-        display: none;
-        }
-    .login1{
-        display: none;
-        }
-    .foto{
-        display: none;
-        }
-    .icon{
-     width: 50px;
-     height: 40px; 
-     
-   
+
+        margin-left: auto;
     }
 
-.cart{
-    display: flex;
-    justify-content: flex-end;
-    min-width: 30vw;
-    padding-bottom: 15%;  
-    font-size: 20px;
-}
+
+    /* Mobile menu */
+
+    .mobileMenu.active {
+        display: block;
+    }
+
+
+    /* Logo */
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tex {
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main{
     padding-top: 25%;
@@ -2173,26 +2302,27 @@ h6{
 }
 
 
-.login1{
-   display: flex;
+
+
+
+#mobileLogin a,
+#mobileRegister a{
+    color: white;
+
 }
 
-#btnLogin{
-    min-width:80px;
-    min-height: 30px;
+#mobileLogin,
+#mobileRegister{
+    min-height: 48px;
+    width:240px;
 }
 
-#btnRegister{
-     min-width:80px;
-    min-height: 30px;
-   
+
+.mobileNav  a{
+    gap:0;
+    padding: 0;
+    margin: 0;
 }
 
-.login{
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    width: 60%;
-    min-height: 8vh;
-}
+
 }

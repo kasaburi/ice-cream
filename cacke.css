@@ -13,105 +13,378 @@
     font-family: font1;
     src: url(./front.html/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
 }
- header{
-    display: flex;
-    position: fixed;
-    z-index: 2;
-    padding-top: 10px;
-    background-color:rgb(255,249,242);  
-    flex-direction: column;
-    width: 100%;
-    height: 10vh; 
-    flex-wrap: nowrap; 
- }  
- main{
 
-    background-color:rgb(255,249,242);
+
+
+
+
+
+
+
+
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230vh;
+    background-color:rgb(249, 236, 222);
 
 }  
-nav{
-    display:flex;
-    text-decoration: none;
-    background-color:rgb(255,249,242);  
-    flex-direction: column;
-    font-family:Arial, Helvetica, sans-serif; 
-    flex-direction:row;  
-    justify-content:space-around; 
-    align-items: center; 
-    height: 10vh;
-    width: 100%;  
-} 
 
- .icon{
-    position: relative;
-    width: 45px;
-    height: 40px; 
-    left: 6%;
-  
- }
- .tex{
-    display: block;
-    position: relative; 
-    top: 15px;
-    height: 5vh;
-    font-size: 16px;
-    color: rgb(99, 59, 59);
-} 
+
+
+
+
+
+
+.login a{
+    color: white;
+}
  
-.ul{
-    display: flex; 
-    position: relative; 
-    font-size: 20px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;   
-    height:5vh;  
-    width: 40vw; 
-    list-style: none;
-   
-}
-a{
-    text-decoration: none;
-    color: rgb(99, 59, 59);
-}
-.login{
-    display: flex;
-    flex-direction:row;
-    gap:10%; 
-    font-size: 20px;
-    width: 20vw; 
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-.login1{
-    display: block;
-    gap: 5px;
 
-} 
- .foto{
-    display: block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    width: 100%;
     position: relative;
-    top: 10px;
-    background-color:rgb(255,249,242); 
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    
+    z-index: 1000;
 }
-.burgerbar{
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 50px;
-    width: 95vw;
-    height: 10vh;
 
+.navbar {
+    width: 100%;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 40px;
+    box-sizing: border-box;
 }
-.burger{
-    display: none;  
-    width: 10vw;
-    height: 10vh;
-       
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.icon {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.tex {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #743806;
+}
+
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+.li {
+    margin-left: 60px;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: #743806;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.ul li a:hover {
+    color: #b85c20;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER
+========================================= */
+
+.login1 {
+    margin-left: auto;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login button {
+    border: none;
+    padding: 10px 16px;
+
+    background: #743806;
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background: #9b4d0b;
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+.cart {
+    text-decoration: none;
+    color: #743806;
+
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.cart:hover {
+    color: #b85c20;
+}
+
+
+/* =========================================
+   BURGER
+========================================= */
+
+.burgerbar {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    padding: 5px;
+    cursor: pointer;
+}
+
+.burger {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobileMenu {
+    display: none;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background: white;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mobile navigation */
+
+.mobileNav {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.mobileNav li a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #743806;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    padding: 10px 0;
+}
+
+
+/* Mobile auth */
+
+.mobileAuth {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+}
+
+.mobileAuth button {
+    width: 100%;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background: #743806;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.mobileAuth button:hover {
+    background: #9b4d0b;
+}
+
+.mobileCart {
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #743806;
+
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .back{
     display: none;
 }
@@ -306,6 +579,15 @@ h6{
 
 @media screen and (min-width: 801px) and (max-width: 1200px){
 
+
+    nav{
+        gap:24px;
+        
+    }
+
+    .tex{
+        font-size: 12px;
+    }
     
 .icon{
         position: relative;
@@ -334,9 +616,7 @@ h1{
     width: 50vw;
     padding-left: 10px;
 }
-.main1{
-    height: 105vh;
-}
+
 .ice{
     height: 35vh;
     margin-left: 10%;
@@ -392,6 +672,10 @@ h6{
     width: 40vw;
  }    
 
+main{
+    min-height: 60vh;
+    height: auto;
+}
 
 
 
@@ -407,46 +691,104 @@ h6{
      
         
     }  
-    nav{
-        margin-top: 10px;
-        width: 60%;    
-        justify-content: space-around;
-        align-items: flex-end;
-      
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .navbar {
+        padding: 10px 20px;
     }
-   
-    .burger{
+
+
+    /* Desktop menu დამალვა */
+
+    .li {
+        display: none;
+    }
+
+    .login1 {
+        display: none;
+    }
+
+
+    /* Burger გამოჩნდეს */
+
+    .burgerbar {
         display: block;
-        position: relative;
-        bottom: 50px;
-        max-height: 7vh !important;
-        
+
+        margin-left: auto;
     }
-    .ul{
-        display: none;
-        flex-direction: column;
-        }
-    .tex{
-        display: none;
-        }
-    .login1{
-        display: none;
-        }
+
+
+    /* Mobile menu */
+
+    .mobileMenu.active {
+        display: block;
+    }
+
+
+    /* Logo */
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tex {
+        font-size: 18px;
+    }
+
+
+
+
+
+#mobileLogin,
+#mobileRegister{
+    width: 280px;
+    min-height: 48px;
+}
+
+
+
+
+
+.cart{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .foto{
         display: none;
         }
-    .icon{
-     width: 50px;
-     height: 40px; 
-     margin-bottom:15px;   
-   
-    }
-
-.cart{
-    padding-bottom: 20px;
-}
-
 
 
 
@@ -454,8 +796,16 @@ h6{
 h1{
     width: 50vw;
 }
+
+main{
+    min-height: 60vh;
+    height: auto;
+}
+
 .main1{
-    height: 105vh;
+    min-height: 65vh;
+    height: auto;
+
 }
 .ice{
     height: 35vh;
@@ -504,7 +854,24 @@ h3{
     
 }
 
+#mobileLogin a,
+#mobileRegister a{
+    color: white;
 
+}
+
+#mobileLogin,
+#mobileRegister{
+    min-height: 48px;
+    width:40vw;
+}
+
+
+.mobileNav  a{
+    gap:0;
+    padding: 0;
+    margin: 0;
+}
 
 
 }
@@ -517,59 +884,78 @@ h3{
 
 @media screen and (max-width: 600px){
 
-
-  .main{
-        height: 20vh;
-
-     
-        
-    } 
-    header{
-        height: 10vh;
-    } 
-    nav{
-        width: 60%;  
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: flex-end;
-       
-    }
-   
-    .burger{
-        display: block;
-        max-height: 6vh;
-        position: relative;
-        bottom: 20px;
-        
-        
-    }
-    .ul{
-        display: none;
-        flex-direction: column;
-        }
-    .tex{
-        display: none;
-        }
-    .login1{
-        display: none;
-        }
-    .foto{
-        display: none;
-        }
-    .icon{
-     width: 50px;
-     height: 40px; 
-     padding-top: 10px;
-     
-   
-    }
-
-.cart{
-    display: flex;
-    justify-content: flex-end;
-    min-width: 40vw;
-    font-size: 20px;
+main{
+    min-height: 50vh;
+    height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+
+    /* Desktop menu დამალვა */
+
+    .li {
+        display: none;
+    }
+
+    .login1 {
+        display: none;
+    }
+
+
+    /* Burger გამოჩნდეს */
+
+    .burgerbar {
+        display: block;
+
+        margin-left: auto;
+    }
+
+
+    /* Mobile menu */
+
+    .mobileMenu.active {
+        display: block;
+    }
+
+
+    /* Logo */
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tex {
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .home{
     display: none;
@@ -671,6 +1057,25 @@ h3{
    min-height: 25vh;
    margin-bottom: 3%;
     
+}
+
+#mobileLogin a,
+#mobileRegister a{
+    color: white;
+
+}
+
+#mobileLogin,
+#mobileRegister{
+    min-height: 48px;
+    width:240px;
+}
+
+
+.mobileNav  a{
+    gap:0;
+    padding: 0;
+    margin: 0;
 }
 
 }

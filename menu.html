@@ -14,6 +14,48 @@
     <link rel="stylesheet" href="./menu.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <img src="./ice.html/iceee.png" alt="Singh Ice Cream" class="icon">
+                <p class="tex">Singh Ice Cream</p>
+            </div>
+            <div class="li">
+                <ul class="ul">
+                    <li><a href="./index.html">home</li>
+                    <li> <a href="./about.html">About</a> </li>
+                    <li><a href="./our-flavors.html">Our Flavors</a>  </li>
+                    <li> <a href="./shop.html">Shop</a> </li>
+                </ul>
+            </div>
+            <div class="login1">
+                <div class="login">
+                     <button type="button" id="btnLogin"><a href="./singin.html">Authorization</a></button>
+                    <button type="button" id="btnRegister"> <a href="./singin.html">Registration </a></button>
+                    <a href="#" class="cart">  Cart (0)</a>
+                </div>
+            </div>
+            <button type="button" class="burgerbar" id="burgerBtn" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg"    class="burger"  viewBox="0 0 448 512">
+                    <path fill="#743806"  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div class="mobileMenu" id="mobileMenu">
+            <ul class="mobileNav">
+                <li><a href="./index.html">home</li>
+                <li><a href="./about.html">About</a></li>
+                <li>  <a href="./our-flavors.html">Our Flavors</a> </li>
+                <li> <a href="./shop.html">Shop</a></li>
+            </ul>
+            <div class="mobileAuth">
+                <button type="button" id="mobileLogin"><a href="./singin.html">Authorization</a></button>
+                <button type="button" id="mobileRegister"><a href="./singin.html">Registration </a></button>
+                <a href="#" class="mobileCart"> Cart (0)</a>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="content">
             <div class="box">
@@ -61,6 +103,7 @@
             </div>
         </div>
     </main>
+    <script src="./index.js"></script>
     <script>
         function toggleinput(){
             const  input=document.getElementById("myinput");
